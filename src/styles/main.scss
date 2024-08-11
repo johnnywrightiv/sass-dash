@@ -1,0 +1,30 @@
+// Import variables, mixins, and functions
+@import "variables";
+@import "mixins";
+@import "functions";
+
+// Import component styles
+@import "components/header";
+@import "components/sidebar";
+@import "components/main-content";
+@import "components/footer";
+@import "components/card";
+@import "components/button";
+
+// Global styles
+// body {
+//   font-family: $font-family;
+//   color: $text-color;
+//   background-color: $background-color;
+// }
+
+// .app {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
+
+// .content-wrapper {
+//   display: flex;
+//   flex: 1;
+// }
