@@ -1,0 +1,35 @@
+@function calculate-footer-height($base-height) {
+  @return $base-height * 1.5;
+}
+
+$footer-height: calculate-footer-height(40px);
+
+.footer {
+  background-color: darken($primary-color, 20%);
+  color: white;
+  height: $footer-height;
+  @include flex-center;
+
+  @if $footer-height > 70px {
+    font-size: $font-size-small;
+  } @else {
+    font-size: $font-size-base;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        opacity: 1 - $i * 0.2;
+      }
+    }
+  }
+
+  @include respond-to(small) {
+    flex-direction: column;
+    height: auto;
+    padding: $spacing-medium;
+  }
+}

@@ -12,19 +12,20 @@
 @import "components/button";
 
 // Global styles
-// body {
-//   font-family: $font-family;
-//   color: $text-color;
-//   background-color: $background-color;
-// }
+body {
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+}
 
-// .app {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-// }
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-// .content-wrapper {
-//   display: flex;
-//   flex: 1;
-// }
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}

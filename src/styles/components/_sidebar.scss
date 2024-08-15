@@ -1,0 +1,25 @@
+.sidebar {
+  background-color: darken($background-color, 5%);
+  width: 200px;
+  padding: $spacing-medium;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: $spacing-small 0;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // @include respond-to(small) {
+  //   width: 25%;
+  // }
+}

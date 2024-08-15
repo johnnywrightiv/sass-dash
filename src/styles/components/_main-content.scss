@@ -1,0 +1,21 @@
+.main-content {
+  flex: 1;
+  padding: $spacing-large;
+
+  .summary,
+  .actions {
+    margin-bottom: $spacing-large;
+  }
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: $spacing-medium;
+  }
+
+  .card-container,
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-medium;
+  }
+}

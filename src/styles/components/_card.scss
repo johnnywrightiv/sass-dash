@@ -1,0 +1,19 @@
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: $spacing-medium;
+  width: calc(30% - #{$spacing-medium});
+  min-width: 200px;
+
+  @include box-shadow;
+
+  h3 {
+    color: $secondary-color;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+}
